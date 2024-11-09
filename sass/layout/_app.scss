@@ -1,0 +1,169 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-primary;
+}
+
+.app {
+  width: 80%;
+  margin: 15rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  font-size: 1.6rem;
+  margin: auto;
+  font-family: $ff-main;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid $color-text;
+  border-radius: 1rem;
+  width: 50%;
+  min-width: 55rem;
+  background-color: $color-white;
+  padding: 5rem;
+
+  &-input-container {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      width: 20rem;
+      height: 4rem;
+      font-family: $ff-main;
+      font-size: 1.6rem;
+      font-weight: 500;
+      border: 1px solid $color-text;
+
+      padding-left: 1rem;
+      border-radius: 0.5rem;
+      cursor: text;
+      outline: none;
+    }
+
+    select {
+      width: 20rem;
+      height: 4rem;
+      font-family: $ff-main;
+      font-size: 1.6rem;
+      font-weight: 500;
+      padding-left: 1rem;
+      border: 1px solid $color-text;
+
+      border-radius: 0.5rem;
+      outline: none;
+    }
+  }
+}
+
+.quiz_question-container {
+  width: 70rem;
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid $color-text;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  color: $color-text;
+  background-color: $color-white;
+
+  font-family: $ff-main;
+  font-size: 2rem;
+}
+
+.button {
+  height: 4rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-family: $ff-main;
+  border: 1px solid $color-text;
+
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s;
+}
+
+.button:hover {
+  // background-color: lighten($color-text, 20%);
+  transform: translateY(-1px);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button:disabled {
+  background-color: lighten($color-text, 30%);
+  color: lighten($color-white, 5%);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-app {
+  color: $color-white;
+  background-color: lighten($color-text, 15%);
+  width: 20rem;
+  cursor: pointer;
+}
+
+.unselected {
+  width: 35rem;
+  height: 7rem;
+}
+
+.selected {
+  width: 35rem;
+  height: 7rem;
+  background-color: $color-selected;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  height: 3rem;
+  font-family: $ff-main;
+  font-size: 1.6rem;
+}
+
+.btn-container {
+  width: 50%;
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+
+  justify-content: space-between;
+}
+
+.btn-submit {
+  width: 100%;
+}
+
+.modal-content {
+  height: 30rem;
+  width: 70rem;
+
+  font-family: $ff-main;
+  font-size: 2rem;
+}
+
+.modal-header {
+  height: 6rem;
+}
+
+.modal-title {
+  font-size: 2rem;
+}

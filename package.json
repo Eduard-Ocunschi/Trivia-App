@@ -1,0 +1,15 @@
+{
+  "name": "eduardocunschi",
+  "version": "1.0.0",
+  "description": "Eduard Eugen Ocunschi Portfolio Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "author": "Eduard Eugen Ocunschi",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.79.4"
+  }
+}

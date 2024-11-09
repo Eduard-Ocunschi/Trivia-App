@@ -1,0 +1,221 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f3df;
+}
+
+.app {
+  width: 80%;
+  margin: 15rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  font-size: 1.6rem;
+  margin: auto;
+  font-family: "Roboto Mono";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid #715d47;
+  border-radius: 1rem;
+  width: 50%;
+  min-width: 55rem;
+  background-color: #f4f5f5;
+  padding: 5rem;
+}
+.form-input-container {
+  display: flex;
+  justify-content: space-between;
+}
+.form-input-container input {
+  width: 20rem;
+  height: 4rem;
+  font-family: "Roboto Mono";
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: 1px solid #715d47;
+  padding-left: 1rem;
+  border-radius: 0.5rem;
+  cursor: text;
+  outline: none;
+}
+.form-input-container select {
+  width: 20rem;
+  height: 4rem;
+  font-family: "Roboto Mono";
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-left: 1rem;
+  border: 1px solid #715d47;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.quiz_question-container {
+  width: 70rem;
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #715d47;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  color: #715d47;
+  background-color: #f4f5f5;
+  font-family: "Roboto Mono";
+  font-size: 2rem;
+}
+
+.button {
+  height: 4rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-family: "Roboto Mono";
+  border: 1px solid #715d47;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button:disabled {
+  background-color: rgb(188.2445652174, 169.4402173913, 148.7554347826);
+  color: white;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-app {
+  color: #f4f5f5;
+  background-color: rgb(158.7255434783, 131.6059782609, 101.7744565217);
+  width: 20rem;
+  cursor: pointer;
+}
+
+.unselected {
+  width: 35rem;
+  height: 7rem;
+}
+
+.selected {
+  width: 35rem;
+  height: 7rem;
+  background-color: #fff099;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  height: 3rem;
+  font-family: "Roboto Mono";
+  font-size: 1.6rem;
+}
+
+.btn-container {
+  width: 50%;
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+  justify-content: space-between;
+}
+
+.btn-submit {
+  width: 100%;
+}
+
+.modal-content {
+  height: 30rem;
+  width: 70rem;
+  font-family: "Roboto Mono";
+  font-size: 2rem;
+}
+
+.modal-header {
+  height: 6rem;
+}
+
+.modal-title {
+  font-size: 2rem;
+}
+
+.navigation {
+  width: 100%;
+  height: 10rem;
+  justify-content: center;
+  -webkit-box-shadow: 3px 15px 42px -6px rgba(23, 23, 23, 0.2);
+  box-shadow: 3px 15px 42px -6px rgba(23, 23, 23, 0.2);
+  position: relative;
+}
+.navigation_container {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.navigation_container-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.navigation_container-list .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation_container-list .logo img {
+  height: 8rem;
+  width: 8rem;
+}
+.navigation_container-list--item {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.navigation_container-list--item a {
+  text-decoration: none;
+  color: #715d47;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
